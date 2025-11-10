@@ -1,53 +1,86 @@
-/**
- * Below are the colors that are used in the app. The colors are defined in the light and dark mode.
- * There are many other ways to style your app. For example, [Nativewind](https://www.nativewind.dev/), [Tamagui](https://tamagui.dev/), [unistyles](https://reactnativeunistyles.vercel.app), etc.
- */
+import { Theme } from "@react-navigation/native";
 
-import { Platform } from 'react-native';
+interface ExtendedTheme extends Theme {
+  spacing: any,
+  secondaryText: string
+}
 
-const tintColorLight = '#0a7ea4';
-const tintColorDark = '#fff';
 
-export const Colors = {
-  light: {
-    text: '#11181C',
-    background: '#fff',
-    tint: tintColorLight,
-    icon: '#687076',
-    tabIconDefault: '#687076',
-    tabIconSelected: tintColorLight,
+export const LightTheme: ExtendedTheme = {
+  dark: false,
+  colors: {
+    primary: "#efba6e",         // Buttons / highlights
+    background: "#FFF",      // Matches your landing screen background
+    card: "#ffffff",            // Nav bar / card background
+    text: "#0f172a",            // Default text color
+    border: "#e0d6c2",          // Soft beige border
+    notification: "#ffb347",    // Accent (e.g., alerts)
   },
-  dark: {
-    text: '#ECEDEE',
-    background: '#151718',
-    tint: tintColorDark,
-    icon: '#9BA1A6',
-    tabIconDefault: '#9BA1A6',
-    tabIconSelected: tintColorDark,
+  secondaryText: '',
+  fonts: {
+    regular: {
+      fontFamily: "InterTight",
+      fontWeight: "400"
+    },
+    medium: {
+      fontFamily: "InterTight",
+      fontWeight: "500"
+    },
+    bold: {
+      fontFamily: "InterTight",
+      fontWeight: "700"
+    },
+    heavy: {
+      fontFamily: "InterTight",
+      fontWeight: "900"
+    }
   },
-};
+  spacing: {
+    xs: 8,
+    sm: 16,
+    md: 24,
+    lg: 32,
+    xl: 48,
+    xxl: 56
+  },
+}
 
-export const Fonts = Platform.select({
-  ios: {
-    /** iOS `UIFontDescriptorSystemDesignDefault` */
-    sans: 'system-ui',
-    /** iOS `UIFontDescriptorSystemDesignSerif` */
-    serif: 'ui-serif',
-    /** iOS `UIFontDescriptorSystemDesignRounded` */
-    rounded: 'ui-rounded',
-    /** iOS `UIFontDescriptorSystemDesignMonospaced` */
-    mono: 'ui-monospace',
+
+export const DarkTheme: ExtendedTheme = {
+  dark: true,
+  colors: {
+    primary: "#efba6e",         // Accent color reversed
+    background: "#fff",      // Dark background
+    card: "#2c2c2c",            // Cards / headers
+    text: "#0f172a",            // Text on dark
+    border: "#444",             // Border on dark
+    notification: "#ffb347",    // Accent
   },
-  default: {
-    sans: 'normal',
-    serif: 'serif',
-    rounded: 'normal',
-    mono: 'monospace',
+  secondaryText: '',
+  fonts: {
+    regular: {
+      fontFamily: "InterTight",
+      fontWeight: "400"
+    },
+    medium: {
+      fontFamily: "InterTight",
+      fontWeight: "500"
+    },
+    bold: {
+      fontFamily: "InterTight",
+      fontWeight: "700"
+    },
+    heavy: {
+      fontFamily: "InterTight",
+      fontWeight: "900"
+    }
   },
-  web: {
-    sans: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
-    serif: "Georgia, 'Times New Roman', serif",
-    rounded: "'SF Pro Rounded', 'Hiragino Maru Gothic ProN', Meiryo, 'MS PGothic', sans-serif",
-    mono: "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
+  spacing: {
+    xs: 8,
+    sm: 16,
+    md: 24,
+    lg: 32,
+    xl: 48,
+    xxl: 56
   },
-});
+}
