@@ -29,12 +29,15 @@ export default function Onboarding() {
   return (
     <SafeAreaView edges={["top"]} style={{ flex: 1 }}>
       <ScrollView contentContainerStyle={{ padding: theme.spacing.md }}>
-        <ThemedText variant="regular" size={28}>
-          Tell Us What You Like
-        </ThemedText>
+        <View style={{flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between'}}>
+          <ThemedText variant="regular" size={28}>
+            Tell Us What You Like
+          </ThemedText>
+        <ThemedText>Skip</ThemedText>
+        </View>
         <ThemedText
           color="#475569"
-          style={{ lineHeight: 24, width: "70%" }}
+          style={{ lineHeight: 24, width: "80%" }}
           variant="regular"
           size={16}
         >

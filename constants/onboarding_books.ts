@@ -112,16 +112,16 @@ export const ONBOARDING_BOOKS: OnboardingBook[] = [
   { title: "The Kiss Quotient", author: "Helen Hoang", year: 2018, imageUrl: "https://m.media-amazon.com/images/I/81J4nP5vItL._SY522_.jpg" },
 
   // Nonfiction – Memoir, History, Science, Self-Help
-  { title: "Educated", author: "Tara Westover", year: 2018, imageUrl: "" },
-  { title: "Becoming", author: "Michelle Obama", year: 2018, imageUrl: "" },
-  { title: "Sapiens", author: "Yuval Noah Harari", year: 2011, imageUrl: "" },
-  { title: "Homo Deus", author: "Yuval Noah Harari", year: 2015, imageUrl: "" },
-  { title: "Atomic Habits", author: "James Clear", year: 2018, imageUrl: "" },
-  { title: "Thinking, Fast and Slow", author: "Daniel Kahneman", year: 2011, imageUrl: "" },
-  { title: "The Subtle Art of Not Giving a F*ck", author: "Mark Manson", year: 2016, imageUrl: "" },
-  { title: "Quiet", author: "Susan Cain", year: 2012, imageUrl: "" },
-  { title: "Bad Blood", author: "John Carreyrou", year: 2018, imageUrl: "" },
-  { title: "The Immortal Life of Henrietta Lacks", author: "Rebecca Skloot", year: 2010, imageUrl: "" },
+  { title: "Educated", author: "Tara Westover", year: 2018, imageUrl: "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1506026635i/35133922.jpg" },
+  { title: "Becoming", author: "Michelle Obama", year: 2018, imageUrl: "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1528206996i/38746485.jpg" },
+  { title: "Sapiens", author: "Yuval Noah Harari", year: 2011, imageUrl: "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1703329310i/23692271.jpg" },
+  { title: "Homo Deus", author: "Yuval Noah Harari", year: 2015, imageUrl: "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1468760805i/31138556.jpg" },
+  { title: "Atomic Habits", author: "James Clear", year: 2018, imageUrl: "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1655988385i/40121378.jpg" },
+  { title: "Thinking, Fast and Slow", author: "Daniel Kahneman", year: 2011, imageUrl: "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1317793965i/11468377.jpg" },
+  { title: "The Subtle Art of Not Giving a F*ck", author: "Mark Manson", year: 2016, imageUrl: "https://covers.openlibrary.org/b/id/15128730-L.jpg" },
+  { title: "Quiet", author: "Susan Cain", year: 2012, imageUrl: "https://m.media-amazon.com/images/G/01/apparel/rcxgs/tile._CB483369110_.gif" },
+  { title: "Bad Blood", author: "John Carreyrou", year: 2018, imageUrl: "https://covers.openlibrary.org/b/id/12735647-L.jpg" },
+  { title: "The Immortal Life of Henrietta Lacks", author: "Rebecca Skloot", year: 2010, imageUrl: "https://covers.openlibrary.org/b/id/10593122-L.jpg" },
 
   // Poetry & Short Stories
   { title: "The Sun and Her Flowers", author: "Rupi Kaur", year: 2017, imageUrl: "https://m.media-amazon.com/images/I/71qQgwFbo+L._SY522_.jpg" },
