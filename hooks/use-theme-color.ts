@@ -1,10 +1,10 @@
-import { DarkTheme, LightTheme } from '@/constants/theme';
 import { useColorScheme } from '@/hooks/use-color-scheme';
+import { DarkTheme, DefaultTheme } from '@react-navigation/native';
 
 
 const Colors = {
-  light: LightTheme.colors,
-  dark: DarkTheme.colors,
+  light: DefaultTheme.colors,
+  dark: DarkTheme.colors
 };
 
 export function useThemeColor(

@@ -1,10 +1,10 @@
-import { DarkTheme, LightTheme } from '@/constants/theme';
+import { ThemeProvider } from '@/contexts/ThemeContext';
 import { useColorScheme } from '@/hooks/use-color-scheme';
-import { ThemeProvider } from '@react-navigation/native';
 import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import 'react-native-reanimated';
 
 export const unstable_settings = {
@@ -36,13 +36,15 @@ export default function RootLayout() {
   }
 
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : LightTheme}>
-      <Stack screenOptions={{headerShown: false}}>
-        <Stack.Screen name="home" options={{ headerShown: false }} />
-        <Stack.Screen name="modal" options={{ presentation: 'modal', title: 'Modal' }} />
-        <Stack.Screen name='onboarding'/>
-      </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
+    <GestureHandlerRootView style={{flex: 1}}>
+      <ThemeProvider>
+        <Stack screenOptions={{headerShown: false, contentStyle: {backgroundColor: '#FFF'}}}>
+          {/* <Stack.Screen name="index" options={{ headerShown: false }} />
+          <Stack.Screen name="modal" options={{ presentation: 'modal', title: 'Modal' }} />
+          <Stack.Screen name="onboarding/index" /> */}
+        </Stack>
+        <StatusBar style="auto" />
+      </ThemeProvider>
+    </GestureHandlerRootView>
   );
 }
