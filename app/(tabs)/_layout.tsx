@@ -36,15 +36,21 @@ export default function TabLayout() {
       <Tabs.Screen
         name="home"
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <MaterialCommunityIcons name="bookshelf" size={24} color={color} />,
+          title: 'Discover',
+          tabBarIcon: ({ color }) => <Feather name="search" size={24} color={color} />,
         }}
       />
       <Tabs.Screen
-        name="explore"
+      name='library'
+       options={{
+          title: 'Library',
+          tabBarIcon: ({ color }) => <MaterialCommunityIcons name="bookshelf" size={24} color={color} />,
+        }}/>
+      <Tabs.Screen
+        name="profile"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          title: 'Profile',
+          tabBarIcon: ({ color }) => <Feather name="user" size={24} color={color} />,
         }}
       />
     </Tabs>

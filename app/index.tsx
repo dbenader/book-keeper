@@ -28,14 +28,14 @@ export default function Landing({ navigation }: any) {
           <Pressable style={{borderRadius: 8, backgroundColor: '#000', padding: 15, alignItems: 'center'}}>
             <View style={{flexDirection: 'row', alignItems: 'center', gap: 5}}>
               <Image source={require('@/assets/images/google.png')} style={{height: 20, width: 20}}/>
-              <ThemedText variant="bold" size={14} style={{color: '#FFF'}}>Continue with Google</ThemedText>
+              <ThemedText variant="medium" size={14} style={{color: '#FFF'}}>Continue with Google</ThemedText>
             </View>
           </Pressable>
 
           <Pressable onPress={()=>router.navigate('/onboarding')} style={{borderRadius: 8, backgroundColor: '#FFF', padding: 15, alignItems: 'center'}}>
             <View style={{flexDirection: 'row', alignItems: 'center', gap: 5}}>
               <Image source={require('@/assets/images/apple.png')} style={{height: 20, width: 20}}/>
-              <ThemedText variant="bold" size={14} style={{color: "#000"}}>Continue with Apple</ThemedText>
+              <ThemedText variant="medium" size={14} style={{color: "#000"}}>Continue with Apple</ThemedText>
             </View>
           </Pressable>
         </View>

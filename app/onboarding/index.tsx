@@ -90,7 +90,7 @@ export default function Onboarding() {
 
                 {/* Right side: Skip / Next */}
                 <BouncePressable onPress={()=>router.replace("/home")}>
-                    <View style={{backgroundColor: 'rgba(0, 255, 0, 0.2)', padding: 5, borderRadius: 5}}>
+                    <View style={{backgroundColor: '#82ad6e', padding: 5, borderRadius: 5}}>
                         <ThemedText variant="regular" style={{color: 'rgb(60, 179, 113)'}}>Next</ThemedText>
                     </View>
                 </BouncePressable>
