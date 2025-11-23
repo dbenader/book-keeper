@@ -15,7 +15,7 @@ export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: colors.primary,
+        tabBarActiveTintColor: '#ff385c',
         headerShown: false,
         tabBarButton: HapticTab,
         tabBarStyle: {
@@ -37,7 +37,7 @@ export default function TabLayout() {
         name="home"
         options={{
           title: 'Discover',
-          tabBarIcon: ({ color }) => <Feather name="search" size={24} color={color} />,
+          tabBarIcon: ({ color }) => <Feather name="book-open" size={24} color={color} />,
         }}
       />
       <Tabs.Screen

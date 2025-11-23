@@ -10,7 +10,7 @@ const BookService = {
         return response.data;
     },
     getListHighlights: async (source: string) => {
-        let response = await api.get<PageResponse<BookListWithBooks>>(`/list/${source}/highlights`);
+        let response = await api.get<Array<BookListWithBooks>>('/lists/source/NYT/highlights');
         return response.data;
     }
 }

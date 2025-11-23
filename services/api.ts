@@ -8,11 +8,13 @@ const api = axios.create({ baseURL: process.env.EXPO_PUBLIC_API_URL });
 const retried = new WeakSet<InternalAxiosRequestConfig>();
 
 // ---------------- request -----------------------------------------------
-// api.interceptors.request.use((config) => {
-//   const token = useAuthStore.getState().accessToken;
-//   if (token) config.headers!.Authorization = `Bearer ${token}`;
-//   return config;
-// });
+api.interceptors.request.use((config) => {
+    // console.log('request', config)
+    // const token = useAuthStore.getState().accessToken;
+    // if (token) config.headers!.Authorization = `Bearer ${token}`;
+    // return config;
+    return config;
+});
 
 // ---------------- response ----------------------------------------------
 // api.interceptors.response.use(

@@ -1,13 +1,12 @@
 export interface Book {
   id: string;                 // UUID as string
-  googleBooksId?: string | null;
-  isbn10?: string | null;
-  isbn13?: string | null;
-  title?: string | null;
-  author?: string | null;
+  openLibraryWorkId: string;
+  isbn13: string;
+  title: string;
+  author: string;
   description?: string | null;
-  genre?: string | null;
-  tags?: string[] | null;
+  genres?: string[];
+  subjects: string[];
   publishedYear?: number | null;
   coverUrl?: string | null;
   averageRating?: number | null;
